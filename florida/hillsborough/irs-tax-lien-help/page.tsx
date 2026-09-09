@@ -35,7 +35,7 @@ const faqSchema = {
       "name": "How do I resolve an IRS tax lien in Hillsborough County?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "There are several paths to resolve an IRS tax lien in Hillsborough County including installment agreements, offer in compromise, lien withdrawal, and penalty abatement. The best option depends on your specific financial situation. A licensed tax professional can review your case and identify which programs you qualify for."
+        "text": "The right response depends on whether you need to pay the balance, remove or reduce the impact of the filed notice, or protect a property transaction. Paying in full generally leads to lien release; qualifying cases may involve withdrawal of the notice, discharge of specific property, subordination, an installment agreement, or another IRS collection alternative."
       }
     },
     {
@@ -43,7 +43,7 @@ const faqSchema = {
       "name": "Can I remove an IRS tax lien from my Hillsborough County property?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes — an IRS tax lien can be removed from your Hillsborough County property through a Certificate of Discharge (for specific property), lien withdrawal after full payment or installment agreement, or lien subordination to allow refinancing. Each option has different eligibility requirements."
+        "text": "A Certificate of Discharge can remove the lien from specific property when eligibility requirements are met. Withdrawal removes the public Notice of Federal Tax Lien in qualifying circumstances, while subordination leaves the lien in place but may allow another creditor to move ahead of the IRS for financing purposes."
       }
     },
     {
@@ -153,11 +153,11 @@ export default function HillsboroughPage() {
           {[
             {
               q: `How do I resolve an IRS tax lien in Hillsborough County?`,
-              a: `There are several paths: installment agreements, offer in compromise, lien withdrawal, and penalty abatement. The best option depends on your specific financial situation. A licensed tax professional can identify which programs you qualify for.`
+              a: `The right response depends on the problem you need to solve. Paying in full generally leads to lien release; qualifying cases may involve withdrawal of the filed notice, discharge of specific property, subordination, an installment agreement, or another IRS collection alternative.`
             },
             {
               q: `Can I remove an IRS tax lien from my Hillsborough County property?`,
-              a: `Yes — through a Certificate of Discharge (for specific property), lien withdrawal after payment or installment agreement, or lien subordination to allow refinancing. Each has different eligibility requirements.`
+              a: `A Certificate of Discharge can remove the lien from specific property when eligibility requirements are met. Withdrawal removes the filed notice in qualifying circumstances, while subordination keeps the lien in place but may help with a financing transaction.`
             },
             {
               q: `How much does it cost to resolve an IRS lien in Tampa?`,
@@ -184,7 +184,7 @@ export default function HillsboroughPage() {
             Answer a few questions in about a minute so your situation can be reviewed against the lien and collection options that may apply.
           </p>
           <Link
-            href="/#quiz"
+            href="/quiz"
             style={{ background: "#D4A843", color: "#0F1B2D", padding: "16px 36px", borderRadius: "4px", fontWeight: "700", fontSize: "16px", textDecoration: "none", display: "inline-block" }}
           >
             Start 60-Second Assessment →
