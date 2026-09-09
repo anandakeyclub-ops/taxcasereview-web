@@ -2,12 +2,12 @@ import type { Metadata } from "next"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Hillsborough County IRS Tax Lien Help | TaxCase Review Florida",
-  description: "IRS tax lien filed in Hillsborough County? Licensed tax professionals help Tampa residents resolve federal tax liens. $399 case review. Call (561) 247-0678.",
+  title: "IRS Tax Lien Help in Hillsborough County, FL | Tampa Options",
+  description: "IRS tax lien in Hillsborough County or Tampa? Learn lien release, withdrawal, payment-plan, discharge and subordination options. Start a 60-second assessment.",
   keywords: "Hillsborough IRS tax lien, Tampa tax debt help, Hillsborough County tax lien removal, IRS lien Tampa Florida",
   openGraph: {
-    title: "Hillsborough County IRS Tax Lien Help | TaxCase Review",
-    description: "Licensed tax professionals helping Hillsborough County residents resolve IRS tax liens. $399 comprehensive case review.",
+    title: "IRS Tax Lien Help in Hillsborough County, FL | TaxCase Review",
+    description: "Understand federal tax lien options in Hillsborough County, including payment plans, withdrawal, discharge and subordination.",
     url: "https://taxcasereview.org/florida/hillsborough/irs-tax-lien-help",
   },
 }
@@ -35,7 +35,7 @@ const faqSchema = {
       "name": "How do I resolve an IRS tax lien in Hillsborough County?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "There are several paths to resolve an IRS tax lien in Hillsborough County including installment agreements, offer in compromise, lien withdrawal, and penalty abatement. The best option depends on your specific financial situation. A licensed tax professional can review your case and identify which programs you qualify for."
+        "text": "The right response depends on whether you need to pay the balance, remove or reduce the impact of the filed notice, or protect a property transaction. Paying in full generally leads to lien release; qualifying cases may involve withdrawal of the notice, discharge of specific property, subordination, an installment agreement, or another IRS collection alternative."
       }
     },
     {
@@ -43,7 +43,7 @@ const faqSchema = {
       "name": "Can I remove an IRS tax lien from my Hillsborough County property?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes — an IRS tax lien can be removed from your Hillsborough County property through a Certificate of Discharge (for specific property), lien withdrawal after full payment or installment agreement, or lien subordination to allow refinancing. Each option has different eligibility requirements."
+        "text": "A Certificate of Discharge can remove the lien from specific property when eligibility requirements are met. Withdrawal removes the public Notice of Federal Tax Lien in qualifying circumstances, while subordination leaves the lien in place but may allow another creditor to move ahead of the IRS for financing purposes."
       }
     },
     {
@@ -97,12 +97,12 @@ export default function HillsboroughPage() {
             IRS Tax Lien Filed in Hillsborough County?
           </h1>
           <p style={{ fontSize: "18px", color: "rgba(255,255,255,0.75)", lineHeight: "1.7", marginBottom: "32px" }}>
-            Federal tax liens are public record in Hillsborough County. They affect your property, credit, and ability to sell or refinance. 
-            Our licensed tax professionals have reviewed 335 tax lien cases in the Tampa area — we know your options.
+            A Notice of Federal Tax Lien can attach to current and future property and may make it harder to sell, refinance, or obtain credit.
+            If you are in Tampa or elsewhere in Hillsborough County, the right next step depends on what the IRS has filed, what you owe, and whether you need to protect a sale, refinance, bank account, wages, or business assets.
           </p>
           <div style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
             <Link
-              href="/#quiz"
+              href="/quiz"
               style={{ background: "#D4A843", color: "#0F1B2D", padding: "14px 28px", borderRadius: "4px", fontWeight: "700", fontSize: "15px", textDecoration: "none", display: "inline-block" }}
             >
               See My Options — 60 Seconds
@@ -119,9 +119,7 @@ export default function HillsboroughPage() {
         {/* Direct answer block — optimized for AI citations */}
         <section style={{ background: "rgba(212,168,67,0.08)", borderLeft: "4px solid #D4A843", margin: "0 24px 48px", padding: "24px 28px", borderRadius: "0 8px 8px 0", maxWidth: "752px", marginLeft: "auto", marginRight: "auto" }}>
           <p style={{ fontSize: "15px", lineHeight: "1.7", color: "rgba(255,255,255,0.85)" }}>
-            <strong style={{ color: "#D4A843" }}>Quick answer:</strong> An IRS tax lien in Hillsborough County can be resolved through an 
-            installment agreement, offer in compromise, lien withdrawal, penalty abatement, or currently not collectible status. 
-            The right path depends on your income, assets, and how much you owe. A $399 case review identifies your exact options within 48 hours.
+            <strong style={{ color: "#D4A843" }}>Quick answer:</strong> Paying the tax in full generally leads to lien release, but other remedies can reduce a lien&apos;s impact in qualifying cases. Depending on your situation, that may include an installment agreement, withdrawal of the filed notice, discharge of specific property, subordination for financing, or another IRS collection alternative.
           </p>
         </section>
 
@@ -155,11 +153,11 @@ export default function HillsboroughPage() {
           {[
             {
               q: `How do I resolve an IRS tax lien in Hillsborough County?`,
-              a: `There are several paths: installment agreements, offer in compromise, lien withdrawal, and penalty abatement. The best option depends on your specific financial situation. A licensed tax professional can identify which programs you qualify for.`
+              a: `The right response depends on the problem you need to solve. Paying in full generally leads to lien release; qualifying cases may involve withdrawal of the filed notice, discharge of specific property, subordination, an installment agreement, or another IRS collection alternative.`
             },
             {
               q: `Can I remove an IRS tax lien from my Hillsborough County property?`,
-              a: `Yes — through a Certificate of Discharge (for specific property), lien withdrawal after payment or installment agreement, or lien subordination to allow refinancing. Each has different eligibility requirements.`
+              a: `A Certificate of Discharge can remove the lien from specific property when eligibility requirements are met. Withdrawal removes the filed notice in qualifying circumstances, while subordination keeps the lien in place but may help with a financing transaction.`
             },
             {
               q: `How much does it cost to resolve an IRS lien in Tampa?`,
@@ -167,7 +165,7 @@ export default function HillsboroughPage() {
             },
             {
               q: `Does an IRS tax lien affect my credit in Hillsborough County?`,
-              a: `The IRS no longer reports tax liens to credit bureaus directly (since 2018). However, federal tax liens are public record in Hillsborough County and can appear in searches used by lenders and title companies.`
+              a: `Federal tax liens no longer appear on major consumer credit reports, but a filed Notice of Federal Tax Lien can still affect your ability to obtain credit and can complicate a sale or refinance because the IRS has a public claim against your property.`
             },
           ].map((item, i) => (
             <div key={i} style={{ borderBottom: "0.5px solid rgba(255,255,255,0.1)", paddingBottom: "24px", marginBottom: "24px" }}>
@@ -183,13 +181,13 @@ export default function HillsboroughPage() {
             Get Your Hillsborough County Case Reviewed
           </h2>
           <p style={{ color: "rgba(255,255,255,0.7)", marginBottom: "32px", maxWidth: "480px", margin: "0 auto 32px" }}>
-            8 questions. 60 seconds. A licensed tax professional reviews your case and outlines your exact options.
+            Answer a few questions in about a minute so your situation can be reviewed against the lien and collection options that may apply.
           </p>
           <Link
-            href="/#quiz"
+            href="/quiz"
             style={{ background: "#D4A843", color: "#0F1B2D", padding: "16px 36px", borderRadius: "4px", fontWeight: "700", fontSize: "16px", textDecoration: "none", display: "inline-block" }}
           >
-            Start Free Assessment →
+            Start 60-Second Assessment →
           </Link>
           <p style={{ marginTop: "16px", fontSize: "13px", color: "rgba(255,255,255,0.4)" }}>
             $399 · Licensed Professionals · 100% Confidential
